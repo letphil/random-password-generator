@@ -1,5 +1,3 @@
-# 1 Hour Lesson Plan: Using Math.random() and Math.floor() to Generate Random Characters
-
 ## Objective
 
 By the end of this lesson, students will understand how to use `Math.random()` and `Math.floor()` to generate random characters from strings and will be able to create a random password generator using HTML, CSS, and JavaScript.
