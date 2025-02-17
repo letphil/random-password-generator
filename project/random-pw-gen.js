@@ -6,7 +6,7 @@ function randomIdx(length) {
   return Math.floor(Math.random() * length);
 }
 
-function getRandomPassword(length, randomGen, cs) {
+function getRandomPassword(length, cs = chars, randomGen = randomIdx) {
   // const clonedChar = chars.split("");
   // let shuffle = "";
 
@@ -20,7 +20,7 @@ function getRandomPassword(length, randomGen, cs) {
   let pw = "";
   // O(8)
   for (let i = 0; i < length; i++) {
-    pw += cs[randomGen(chars.length)];
+    pw += cs[randomGen(cs.length)];
   }
   return pw;
 }
@@ -55,10 +55,10 @@ function getRandomChar(chars) {
   } else return randomChar;
 }
 
-const randomChar = getRandomChar(
-  "Phil Choi David Jocelin William Mustafa Colby Minnie"
-);
-console.log("randomChar =", randomChar);
+// const randomChar = getRandomChar(
+//   "Phil Choi David Jocelin William Mustafa Colby Minnie"
+// );
+// console.log("randomChar =", randomChar);
 
 // let num = 0;
 

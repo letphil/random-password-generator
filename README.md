@@ -26,6 +26,23 @@ const randomCharacter = characters[randomIndex];
 console.log(randomCharacter);
 ```
 
+```js
+const chars =
+  "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()-=_+1234567890";
+
+function randomIdx() {
+  return Math.floor(Math.random() * chars.length);
+}
+
+function getRandomPassword(length) {
+  let pw = "";
+  for (let i = 0; i < length; i++) {
+    pw += chars[randomIdx()];
+  }
+  return pw;
+}
+```
+
 ### Practice Exercise (10 minutes)
 
 - Have students write a function that returns a random character from a given string.
